@@ -1,0 +1,111 @@
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+
+            <title>daskalo.xyz</title>
+            <style>
+            
+            .popup{
+                -webkit-animation-name: text-shadow-pop-br;
+                animation-name: text-shadow-pop-br;
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;        
+                font-size: 100px;
+                color:white;
+
+            }
+            
+            body{
+                font-family: 'Comfortaa';
+                min-height: 100vh;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                -webkit-animation-name: color-change-2x;
+                animation-name: color-change-2x;
+                -webkit-animation-duration: infinite;
+                animation-duration: infinite;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;   
+            }
+            .content {
+                text-align:center;
+                color: white;
+                font-size:large;
+            }
+            .content a{
+                color:pink;
+            }
+            .content a:hover{
+                color:hotpink;
+            }
+            @media only screen and (max-width: 600px) {
+
+                .popup{
+                    font-size:xx-large;
+                }
+                .content{
+                    font-size:medium;
+                }
+
+            }
+            @-webkit-keyframes text-shadow-pop-br {
+                0% {
+                    text-shadow: 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555;
+                    -webkit-transform: translateX(0) translateY(0);
+                    transform: translateX(0) translateY(0)
+                }
+                100% {
+                    text-shadow: 1px 1px #555, 2px 2px #555, 3px 3px #555, 4px 4px #555, 5px 5px #555, 6px 6px #555, 7px 7px #555, 8px 8px #555;
+                    -webkit-transform: translateX(-8px) translateY(-8px);
+                    transform: translateX(-8px) translateY(-8px)
+                }
+            }
+
+            @keyframes text-shadow-pop-br {
+                0% {
+                    text-shadow: 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555;
+                    -webkit-transform: translateX(0) translateY(0);
+                    transform: translateX(0) translateY(0)
+                }
+                100% {
+                    text-shadow: 1px 1px #555, 2px 2px #555, 3px 3px #555, 4px 4px #555, 5px 5px #555, 6px 6px #555, 7px 7px #555, 8px 8px #555;
+                    -webkit-transform: translateX(-8px) translateY(-8px);
+                    transform: translateX(-8px) translateY(-8px)
+                }
+            }
+            
+            @-webkit-keyframes color-change-2x{
+                0%{
+                    background:#6e008a
+                }
+                100%{
+                    background:#b22cff
+                }
+            }
+            
+            @keyframes color-change-2x{
+                0%{
+                    background:#6e008a
+                }
+                100%{
+                    background:#b22cff
+                    }
+                }
+            </style>
+    </head>
+    <body>
+        
+    <div class="content">
+    <h1 class="popup">Daskalo.xyz</h1>
+    <p> This is one of <a href="https://yamozha.xyz/projects">Boyan's projects</a>.<br>This used to be a portal, for students in online education, to get into class automatically.<br>If you'd like to read more, <a href="https://yamozha.xyz/daskalo-xyz">click here</a>, or check out <a href="https://github.com/yamozha/daskalo-xyz"></a>the repo</p>
+    <p> If you have further questions please <a href="mailto://boyan@daskalo.xyz">contact me</a> or <a href="https://yamozha.xyz">visit my website</a>.</a></p>
+    </div>
+    </body>
+    </html>
